@@ -15,11 +15,31 @@ public class KrestikAndNull {
 
     public static void main(String[] args) {
         initMap();
+        printMap();
     }
+
+
 
     private static void initMap() {
         MAP = new char[SIZE][SIZE];
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++){
+                MAP[i][j] = DOT_EMPTY;
+            }
+        }
     }
-
+    private static void printMap() {
+        for (int i = 0; i <= SIZE; i++) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        for (int i = 0; i < SIZE; i++){
+            System.out.print((i + 1) + " ");
+            for (int j = 0; j < SIZE; j++){
+                System.out.print(MAP[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 
 }
