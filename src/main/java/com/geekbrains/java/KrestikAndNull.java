@@ -120,7 +120,6 @@ public class KrestikAndNull {
 
         return false;
     }
-
     private static boolean isMapFull() {
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -164,7 +163,6 @@ public class KrestikAndNull {
         if (MAP[y][x] == DOT_EMPTY) {
             return true;
         }
-
         return false;
     }
 
