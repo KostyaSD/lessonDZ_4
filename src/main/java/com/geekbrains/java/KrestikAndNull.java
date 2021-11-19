@@ -164,7 +164,6 @@ public class KrestikAndNull {
         if (MAP[y][x] == DOT_EMPTY) {
             return true;
         }
-
         return false;
     }
 
